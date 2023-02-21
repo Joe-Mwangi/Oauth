@@ -1,7 +1,7 @@
 const path = require('path')
 
 function homepage(req, res) {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    res.sendFile(path.join(__dirname, '..', '..', 'public', 'index.html'))
 }
 
 function getSecret(req, res) {
