@@ -8,7 +8,12 @@ function getSecret(req, res) {
     res.send('Your secret is 43')
 }
 
+function failedLogin(req, res) {
+    return res.send('Failed to log in')
+}
+
 module.exports = {
     homepage,
-    getSecret
+    getSecret,
+    failedLogin
 }

@@ -1,4 +1,4 @@
-function checkLoggedIn(res, req, next) {
+function checkLoggedIn(req, res, next) {
     const isLoggedIn = true
     if(!isLoggedIn) {
         return res.status(401).json({
